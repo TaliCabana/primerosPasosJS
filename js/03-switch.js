@@ -25,6 +25,7 @@ const opcion = prompt(
 let saldo = 10000;
 
 switch (opcion) {
+  case "saldo": // Si ingresa la palabra saldo o la opción 1 => devuelve el saldo que hay en la cuenta
   case "1":
     alert("Su saldo es $" + saldo);
     break;
