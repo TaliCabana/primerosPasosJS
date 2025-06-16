@@ -16,4 +16,5 @@ while (renglon <= 50) {
   renglon++; // equivale a renglon = renglon + 1
 }
 
-// do-while
+// do-while 
+// es el que se debe ejecutar al menos una vez
