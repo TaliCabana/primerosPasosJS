@@ -9,7 +9,7 @@
 ……
 */
 
-let numeroRepeticiones = parseInt(prompt("Ingresá un número del 1 al 50"))
+const numeroRepeticiones = parseInt(prompt("Ingresá un número del 1 al 50"))
 
 for(let fila=0 ; fila < numeroRepeticiones ; fila++){
 
