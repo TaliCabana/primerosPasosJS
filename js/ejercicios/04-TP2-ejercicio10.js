@@ -10,11 +10,13 @@ console.log(filas, columnas)
 
 // Dibujar la tabla
 document.writeln(`<table class="table table-striped"><tbody>`);
-for(let indiceFilas=0; indiceFilas<filas ; indiceFilas++)           
-document.writeln(`<tr>
-                    <td class="p-2">35</td>
-                </tr>`)
-
+for(let indiceFilas=0; indiceFilas<filas ; indiceFilas++){          
+document.writeln(`<tr>`);
+for (let indiceColumna=0; indiceColumna<columnas ; indiceColumna++ ){
+document.writeln(`<td class="p-2">35</td>`);    
+}
+document.writeln(`</tr>`);
+}
 document.writeln(`</tbody></table>`)
             
 
