@@ -21,5 +21,3 @@ document.writeln(`</tr>`);
 }
 document.writeln(`</tbody></table>`)
             
-
-// Dibujar el valor de las celdas
