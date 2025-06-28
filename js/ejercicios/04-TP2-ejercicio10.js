@@ -5,6 +5,7 @@ Ejercicios con Math
 // Pedir al usario las filas y columnas
 const filas = parseInt(prompt ("Ingresá un número de filas"))
 const columnas = parseInt(prompt ("Ingresá un número de columnas"))
+let totalCelda = filas*columnas
 
 console.log(filas, columnas)
 
@@ -13,7 +14,8 @@ document.writeln(`<table class="table table-striped"><tbody>`);
 for(let indiceFilas=0; indiceFilas<filas ; indiceFilas++){          
 document.writeln(`<tr>`);
 for (let indiceColumna=0; indiceColumna<columnas ; indiceColumna++ ){
-document.writeln(`<td class="p-2">35</td>`);    
+document.writeln(`<td class="p-2">${totalCelda--}</td>`);  
+// totalCelda-- (si pusiera sin el "--" en la linea anterior)  
 }
 document.writeln(`</tr>`);
 }
