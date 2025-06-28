@@ -3,16 +3,19 @@ Ejercicios con Math
 */
 
 // Pedir al usario las filas y columnas
+const filas = parseInt(prompt ("Ingresá un número de filas"))
+const columnas = parseInt(prompt ("Ingresá un número de columnas"))
+
+console.log(filas, columnas)
 
 // Dibujar la tabla
-document.writeln(`<table>
-            <tbody>`);
-            
+document.writeln(`<table class="table table-striped"><tbody>`);
+for(let indiceFilas=0; indiceFilas<filas ; indiceFilas++)           
 document.writeln(`<tr>
-                    <td>35</td>
+                    <td class="p-2">35</td>
                 </tr>`)
 
-document.writeln(`</tbody>
-            </table>`)
+document.writeln(`</tbody></table>`)
+            
 
 // Dibujar el valor de las celdas
