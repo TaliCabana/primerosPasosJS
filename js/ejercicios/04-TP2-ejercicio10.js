@@ -20,4 +20,3 @@ document.writeln(`<td class="p-2">${totalCelda--}</td>`);
 document.writeln(`</tr>`);
 }
 document.writeln(`</tbody></table>`)
-            
