@@ -15,14 +15,26 @@ function saludarPersona(nombre, apellido){
     document.writeln(`<p>Hola ${nombre} , ${apellido}</p>`)
 }
 
+function mostrarCancion(nombreCancion){
+    // todas las lineas de código que sabe hacer esta función
+    const cancion = "La canción ingresada es: "+nombreCancion
+    return cancion // esto indica que termina aquí la función. Siempre debe ser la última linea de la función.
+}
+
 // expresión de funcion
 
 //arrow function o funciones en forma de flecha
 
 // llamar o invocar a la funcion
+
 saludar();
 const nombre = prompt("Ingresá tu nombre")
 const apellido = prompt("Ingresá tu apellido")
 
 saludarPersona("Matías", "Saade")
 saludarPersona(nombre, apellido)
+
+const textoGenerado = mostrarCancion("Crimen")
+
+document.writeln(`<p>El texto generado fue: ${textoGenerado}</p>`)
+document.writeln(mostrarCancion("Flaca"))
