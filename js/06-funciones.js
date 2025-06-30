@@ -65,3 +65,5 @@ const numero2 = parseInt(prompt("Ingresá otro número"))
 
 sumar(numero1, numero2)
 sumar (5,20)
+document.writeln(`<p>Resultado: ${sumar(12,5)}</p>`)
+

@@ -1,5 +1,3 @@
-
-
 const mostrarCanciones = (titulo) => {
   document.writeln(
     `<h2 class="mt-3">${titulo} - Cantidad de elementos antes de modificar la lista: ${canciones.length}</h2>`
@@ -17,7 +15,7 @@ const mostrarCanciones = (titulo) => {
 const peliculas = [];
 
 //array de canciones
-const canciones =["Batidora", 2010, true, "Música ligera", "Mujer amante"]
+const canciones = ["Batidora", 2010, true, "Música ligera", "Mujer amante"];
 
 // mostrar un array
 console.log(peliculas);
@@ -65,3 +63,43 @@ mostrarCanciones("Borrar un elemento del medio del array");
 // modificar un elemento del array
 canciones[3] = "Sobredosis de TV";
 mostrarCanciones("Modificar un elemento del array");
+
+// Métodos extras para trabajar con arrays
+const nombreCancion = prompt("Ingresá un nombre de canción");
+
+const cancionAlmacenada = canciones.find(
+  (cancion) => nombreCancion === cancion
+);
+console.log(cancionAlmacenada);
+
+/*
+if (cancionAlmacenada){ // Folses: null,undefinid,0,""
+  document.writeln(`<p>La canción buscada existe</p>`)
+}else{ 
+ document.writeln(`<p>La canción buscada no existe</p>`)
+}
+*/
+
+// Operador ternario: (condición lógica)? si se cumple la condición hago esto : si no se cumple la condición hago esto otro
+
+const respuesta = cancionAlmacenada
+  ? "La canción buscada existe"
+  : "La canción buscada no existe";
+document.writeln(`<p>${respuesta}</p>`);
+
+const indiceCancion = canciones.findIndex((cancion)=> nombreCancion === cancion )
+// si encuentra => devuelve un nro >= 0
+// si no encuentra => devuelve -1
+console.log(indiceCancion)
+const indiceCancionBuscada = indiceCancion > -1
+  ? `La canción está en la posición ${indiceCancion} del array de canciones.`
+  : "La canción buscada no está en la lista";
+document.writeln(`<p>${indiceCancionBuscada}</p>`);
+
+const cancionesFiltradas = canciones.filter((item) => item.length>=13)
+
+console.log(cancionesFiltradas)
+
+document.writeln(`<li class="list-group">`)
+cancionesFiltradas.map((cancion, indice)=>document.writeln(`<li class="list-group-item">${cancion} - Índice: ${indice}</li>`))
+document.writeln(`</ul>`)
